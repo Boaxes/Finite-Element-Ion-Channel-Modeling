@@ -1,0 +1,11 @@
+name: finite-element-ion-channel-modeling
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12
+  - fenics-dolfinx
+  - gmsh
+  - matplotlib
+  - mpi4py
+  - numpy
+  - pyvista
