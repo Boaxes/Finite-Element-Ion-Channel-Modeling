@@ -24,11 +24,7 @@ ROOT = Path(__file__).resolve().parent
 RESULTS_DIR = ROOT / "results"
 RESULTS_DIR.mkdir(exist_ok=True, parents=True)
 
-# ------------------------------------------------------------
-# Verification problem: 3D Gaussian approximation to Holst's
-# single-charge formula on a cube.
-# ------------------------------------------------------------
-
+# Cube verification experiment. See "A Poisson Boltzmann Numerical Experiment" (pages 4-7).
 BOX_HALF_WIDTH = 1.0
 KAPPA = 2.0
 SIGMA_3D = 0.10
@@ -311,11 +307,7 @@ def write_gaussian_summary(results):
         json.dump(serializable, fh, indent=2)
 
 
-# ------------------------------------------------------------
-# Two-domain experiment: square containing a circular protein
-# region with piecewise dielectric coefficients.
-# ------------------------------------------------------------
-
+# Two-domain experiment. See "A Poisson Boltzmann Numerical Experiment" (pages 8-14).
 PROTEIN_MARKER = 1
 SOLVENT_MARKER = 2
 OUTER_BOUNDARY_MARKER = 3

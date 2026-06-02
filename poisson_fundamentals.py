@@ -21,6 +21,7 @@ DOC_DIR = RESULTS_DIR
 RESULTS_DIR.mkdir(exist_ok=True, parents=True)
 
 
+# Manufactured-solution Poisson experiment. See "The Poisson Equation and Its Role in Ion Channel Modeling" (pages 9-10).
 def exact_solution(x):
     return 1 + x[0] ** 2 + 2 * x[1] ** 2
 
